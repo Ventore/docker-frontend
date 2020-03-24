@@ -6,4 +6,4 @@ before_install:
   - docker build -t basov/docker-frontend -f Dockerfile.dev .
 
 script:
-  - docker run basov/docker-frontend npm run test -- --coverage
+  - docker run basov/docker-frontend npm run test -- --coverage --watchAll
